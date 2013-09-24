@@ -1,1 +1,8 @@
-p headlines
+- each game in sort(site.games)
+  h3.title= game.title
+  h1.headline= game.headline
+  img.snippet(src="#{game.image}")
+  .wrap-up
+    p.summary= game.summary
+
+    button.full-game(href="#{game.href}") Full Game

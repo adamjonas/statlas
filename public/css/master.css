@@ -252,13 +252,14 @@ body {
 body {
   padding: 50px;
 }
-body h1.logo {
+body img.logo {
   float: left;
+  width: 9em;
 }
 body li {
   list-style-type: none;
   float: left;
-  margin-left: 2em;
+  margin: 1em 0 0 2em;
   font-size: 1.5em;
 }
 body li a {
@@ -273,4 +274,48 @@ body li a.active {
 body p.note {
   float: right;
   width: 22em;
+}
+body .moat {
+  clear: both;
+  margin: 10em 0;
+}
+body h3.title {
+  border-top: 2px solid #808080;
+}
+body img.snippet {
+  width: 57%;
+}
+body .wrap-up {
+  display: inline-block;
+  width: 37%;
+  float: right;
+}
+body .wrap-up button.full-game {
+  margin-top: 20%;
+  font-size: 15px;
+  padding: 11.475px 25.245px;
+  -webkit-border-radius: 3.461541124262403px;
+  -moz-border-radius: 3.461541124262403px;
+  -o-border-radius: 3.461541124262403px;
+  -ms-border-radius: 3.461541124262403px;
+  border-radius: 3.461541124262403px;
+  background-color: #a7a9ac;
+  color: #494949;
+  color: rgba(73,73,73,0.95);
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+body .wrap-up button.full-game:hover,
+body .wrap-up button.full-game:focus {
+  background-color: #9ea0a4;
+  color: #474747;
+  color: rgba(71,71,71,0.95);
+}
+body .wrap-up button.full-game:active {
+  background-color: #96989c;
 }

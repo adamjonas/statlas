@@ -9,12 +9,9 @@ require.config
     jquery: '//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min'
 
 require ['jquery'], ($) ->
-  console.log 'jquery loaded (via assets/js/main.coffee)'
 
   $ ->
-
     url = window.location.pathname
-    console.log url
     urlRegExp = new RegExp(url.replace(/\/$/, "") + "$")
     $(".nav a").each ->
       $(@).addClass "active" if (urlRegExp.test(@href.replace(/\/$/, "")) && url != '/')

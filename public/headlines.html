@@ -9,15 +9,26 @@
     <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
-    <div class="nav">
-      <h1 class="logo">logo</h1>
+    <div class="nav"><a href="/"><img src="img/logo.png" class="logo"></a>
       <ul>
         <li><a href="headlines.html" class="header-link">Headlines</a></li>
         <li><a href="game_index.html" class="header-link">Game Index</a></li>
       </ul>
       <p class="note">Statlas maps sports. This month we're charting every moment of gameplay in the MLB playoffs.</p>
     </div>
-<p>headlines</p>
+    <div class="moat"></div>
+<h3 class="title">Oct 9 - ALCS - Boston 6, Detroit 8</h3>
+<h1 class="headline">This is the headline</h1><img src="http://placehold.it/750x320" class="snippet"/>
+<div class="wrap-up">
+  <p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+  <button href="/red_sox_tigers_oct_9.html" class="full-game">Full Game</button>
+</div>
+<h3 class="title">Oct 10 - ALCS - Boston 7, Detroit 2</h3>
+<h1 class="headline">This is the headline2</h1><img src="http://placehold.it/750x320" class="snippet"/>
+<div class="wrap-up">
+  <p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+  <button href="undefined" class="full-game">Full Game</button>
+</div>
     <script data-main="js/main" src="js/require.js"></script><script>protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://'; address = protocol + window.location.host + window.location.pathname + '/ws'; socket = new WebSocket(address);
 socket.onmessage = function(msg) {
   msg.data == 'reload' && window.location.reload();

@@ -9,16 +9,14 @@
     <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
-    <div class="nav">
-      <h1 class="logo">logo</h1>
+    <div class="nav"><a href="/"><img src="img/logo.png" class="logo"></a>
       <ul>
         <li><a href="headlines.html" class="header-link">Headlines</a></li>
         <li><a href="game_index.html" class="header-link">Game Index</a></li>
       </ul>
       <p class="note">Statlas maps sports. This month we're charting every moment of gameplay in the MLB playoffs.</p>
-    </div><h1 class='title'>Statlas</h1><p><strong>Whoo!</strong> You got everything working. Now get to making cool things : )</p>
-
-<p>this file can be found in views/index.jade</p>
+    </div>
+    <div class="moat"></div>
     <script data-main="js/main" src="js/require.js"></script><script>protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://'; address = protocol + window.location.host + window.location.pathname + '/ws'; socket = new WebSocket(address);
 socket.onmessage = function(msg) {
   msg.data == 'reload' && window.location.reload();
